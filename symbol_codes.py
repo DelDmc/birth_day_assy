@@ -1,0 +1,1 @@
+plus_icon = u"\u002B"

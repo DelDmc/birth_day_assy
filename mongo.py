@@ -6,12 +6,11 @@ from pymongo.server_api import ServerApi
 
 client = MongoClient(
     f"mongodb+srv://{config('MONGO_LOGIN')}:{config('MONGO_PASSWORD')}"
-    f"@cluster0.tmykjbu.mongodb.net/?retryWrites=true&w=majority",
+    f"@sandbox.0ca4qre.mongodb.net/?retryWrites=true&w=majority",
     server_api=ServerApi('1'))
 
 db = client.bday_db
-collection = db.test_collection
-users = db.users
+
 
 
 # post = {"author": "Del",
